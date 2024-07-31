@@ -8,8 +8,8 @@ jobs:
       - run:
           name: "Say hello"
           command:
-            echo 'Hey World!'
-            echo 'This is a pipeline'
+            echo "Hey World!"
+            echo "This is a pipeline"
 
 workflows:
   say-hello-workflow:
