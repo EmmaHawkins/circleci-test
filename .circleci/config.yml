@@ -2,12 +2,14 @@ version: 2.1
 jobs:
   say-hello:
     docker:
-      - image: cimg/base:current
+      - image: cimg/base:2021.04
     steps:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo Hello, World!"
+          command:
+            echo 'Hey World!'
+            echo 'This is a pipeline'
 
 workflows:
   say-hello-workflow:
